@@ -7,8 +7,8 @@ RUN rm /usr/share/nginx/html/*
 # Copy our index.html to the Nginx web directory
 COPY index.html /usr/share/nginx/html/
 
-# Expose port 80
-EXPOSE 80
+# Expose port 80081
+EXPOSE 80081
 
 # Start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
